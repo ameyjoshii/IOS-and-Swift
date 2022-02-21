@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="IOSProject1" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="K7O-2r-H6U">
+                                <rect key="frame" x="100" y="524" width="211" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="100" id="1VQ-UR-ndL"/>
+                                    <constraint firstAttribute="height" constant="100" id="GaC-0n-oBm"/>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" id="JYM-NV-01S"/>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="250" id="KlE-vZ-xKo"/>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="100" id="KxY-qW-a0X"/>
+                                    <constraint firstAttribute="width" constant="250" id="Zq0-rE-z5o"/>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" id="bba-Pe-T4d"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="ehr-tY-sZO"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uk4-gX-ipi">
+                                <rect key="frame" x="104" y="679" width="207" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="gray" title="Submit"/>
+                                <connections>
+                                    <action selector="BtnClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gb5-Mh-r0W"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="TEXT" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZFQ-Iw-nhA">
+                                <rect key="frame" x="100" y="193" width="211" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="Fcf-v1-Ixv"/>
+                                    <constraint firstAttribute="height" constant="30" id="hCb-q6-QHQ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="K7O-2r-H6U" firstAttribute="top" secondItem="ZFQ-Iw-nhA" secondAttribute="bottom" constant="300" id="2yV-zE-zvc"/>
+                            <constraint firstItem="K7O-2r-H6U" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="100" id="BtB-fN-gV5"/>
+                            <constraint firstItem="ZFQ-Iw-nhA" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="HOP-dj-mrI"/>
+                            <constraint firstItem="ZFQ-Iw-nhA" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="100" id="JMR-Up-NJ5"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="K7O-2r-H6U" secondAttribute="trailing" id="Ldh-Xc-TPn"/>
+                            <constraint firstItem="ZFQ-Iw-nhA" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="150" id="Oaf-9i-YMl"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ZFQ-Iw-nhA" secondAttribute="trailing" constant="100" id="Pbf-xE-Ywn"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="K7O-2r-H6U" secondAttribute="trailing" constant="100" id="T6G-XD-7JH"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="K7O-2r-H6U" secondAttribute="trailing" constant="100" id="a5e-g3-QRt"/>
+                            <constraint firstItem="K7O-2r-H6U" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="aXh-Kk-qsh"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="K7O-2r-H6U" secondAttribute="trailing" constant="100" id="msv-FE-Hxr"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="K7O-2r-H6U" secondAttribute="trailing" id="vzj-B6-g6f"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="inputText" destination="K7O-2r-H6U" id="lkL-hr-dNA"/>
+                        <outlet property="submit" destination="uk4-gX-ipi" id="ArM-Ak-sqg"/>
+                        <outlet property="textDisplay" destination="ZFQ-Iw-nhA" id="K38-No-8x6"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2057" y="-879"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
